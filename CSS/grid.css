@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns:auto auto auto;
     grid-template-rows: 100px 100px 100px 100px; 
     /* justify-content: center; */
     /* justify-content: space-evenly; */
@@ -35,8 +35,11 @@
     }
 } */
 
-/* @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
     .container{
         grid-template-columns: auto auto;
     }
-} */
+    .container > .item5{
+        grid-column: 1/3;
+    }
+}

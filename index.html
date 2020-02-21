@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script> 
+//    $(document).ready(
+//        ()=>{
+//           $(".test").text("this text created by jquery") 
+//        }
+//    )
+// $(".test").text("this text created by jquery") 
+    </script>
 </head>
 
+
 <body>
+    <div> after this tag have tag div </div>
+    
+    <div id="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
     <h1> this is heading 1</h1>
     <h2> this is heading 2</h2>
     <h3> this is heading 3</h3>
@@ -28,13 +44,15 @@
         alt="sea">
     <button> click</button>
     <hr />
-    <ul>
+    <ul id="ul">
         <li>list 1</li>
         <li>list 2</li>
         <li>list 3</li>
         <li>list 4</li>
         <li>list 5</li>
     </ul>
+    <button id="add"> add list</button>
+    <button id="remove">remove</button>
 
     <ol>
         <li>list 1</li>
@@ -107,5 +125,21 @@
 
 
 </body>
+<script>
+//  function add () {
+//      $(".test").text("this text created by jquery") 
+//  };
+// add();
+$("#test").text("this text created by jquery");
+$("#add").click(()=>{
 
+    $("#ul").append(` <li> ${prompt("add your text")} </li> `)
+})
+$("#remove").click(()=>{
+
+    $("#ul > li").last().remove();
+})
+
+
+</script>
 </html>

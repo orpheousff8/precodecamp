@@ -10,22 +10,29 @@
     <!-- tag link use for import external css การนำเข้าไฟล์ CSS จากภายนอก HTML ไฟล์-->
 </head>
 
+<a href="#">This link isn't working.</a>
+<a href="index.html">This link is working.</a>
 
 <body>
-    <h1 class="heading" style="property: value; property: value;">test tag A </h1>
+    <!-- <h1 style="property: value; property: value;">test tag A </h1> -->
+    <h1 class="heading">test tag A class Heading</h1>
+    <h1 class="heading">test tag B class Heading</h1>
     <!-- inline css use for edit style in this tag การปรับแต่ง CSS ในแท๊ก-->
-    <style>
+    <!-- <style>
         selector {
             property: value;
             property: value;
             property: value;
-        }
+        } -->
         
         
 
     </style><!-- tag style use for import internal css การใช้ CSS จากภายใน HTML ไฟล์-->
 
     <h3 id="idName"> this tag have id that is idName</h3>
+    <h3 id="idName"> this tag also have id that is idName</h3>
+    <!-- You absolutely should not have duplicate IDs. It may work*,
+         but it is semantically incorrect and you should not do it -->
 
     <h3 class="className"> this tag have class that is className</h3>
 
@@ -39,43 +46,48 @@
 
     <h2> Combinator test</h2>
 
-    <div>
-        <p>paragraph 1 in div</p>
-        <p>paragraph 2 in div</p>
-        <p>paragraph 3 in div</p>
+    <div>div1
+        <p>p1 in div1;</p>
+        <p>p2 in div1;</p>
+        <p>p3 in div1;</p>
     </div>
 
 
     <h3 id="tagH">
-        <div>div 1 item in tag p
-            <div>div 1 item in tag div in tag p</div>
-            <div class="plusCombinators">div 2 item in tag div in tag p <strong>this div have class
-                    plusCombinators</strong></div>
-            <div>div 3 item in tag div in tag p</div>
-            <div>div 4 item in tag div in tag p</div>
-            <span> tag p</span>
-            <div> div 5 item in tog div in tag 4</div>
+        <div>div2 in tagH;
+            <div>div3 in div2 in tagH;</div>
+            <div class="plusCombinators">div4 in div2 in tagH 
+                <strong>, this div4 have class plusCombinators;</strong>
+            </div>
+            <div><p>p4 in div5 in div2 in tagH;</p></div>
+            <div>div6 in div2 in tagH;</div>
+            <span>span1 in div2 in tagH;</span>
+            <div>div7 in div2 in tagH;</div>
         </div>
 
-        <div>div 2 item in tag p</div>
-        <div>div 3 item in tag p</div>
-        <div>div 4 item in tag p</div>
-        <div>div 5 item in tag p</div>
+        <div>div8 in tagH;</div>
+        <div>div9 in tagH;</div>
+        <div>div10 in tagH;</div>
+        <div>div11 in tagH;</div>
 
-        <span>span 1 item in tag p</span>
-        <span>span 2 item in tag p</span>
-        <span>span 3 item in tag p</span>
+        normal in tagH<br>
+
+        <span>span2 in tagH;</span>
+        <span>span3 in tagH;</span>
+        <span>span4 in tagH;</span>
     </h3>
     <!-- # tag p cannot use combinator with div or block element because tag p allowed only inline element-->
-    <p>
-        <span> span in tag p</span>
-        <span> span 2 in tag p </span>
-        <span>
-            <span>span 1 in span</span>
-            <span>span 2 in span</span>
-            <span>span 3 in span</span>
+    <p>p2
+        <span>span5 in p2;</span>
+        <span>span6 in p2;</span>
+        <span>span7 in p2;
+            <span>span8 in span7 in p2;
+                <span>span9 in span8 in span7 in p2;</span>
+            </span>
+            <span>span10 in span7 in p2;</span>
+            <span>span11 in span7 in p2;</span>
         </span>
-        <div> div in tag p</div>
+        <div>div12 in p2;</div>
     </p>
 
     <h2> attribute selectors</h2>
@@ -85,7 +97,7 @@
         <input type="date" title="input-Form"><br>
         <input type="email" title="input_Form"><br>
         <input type="file" title="input//Form"><br>
-        <input type="password" title="input Form"><br>
+        <input type="password" title="input this Form"><br>
         <input type="search" title=" this input search">
     </form>
 

@@ -1,64 +1,93 @@
-selector {
+/* selector {
   property: value;
   property: value;
   property: value;
-}
+} */
 
 #idName {
   color: red;
 }
 
 .className {
+  color: tomato;
+}
+
+.heading {
   color: greenyellow;
 }
 
 input:checked {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 }
 
+/* ถ้า property ชนกับ combinator จะยึด combinator 
+ไม่เกี่ยวกับบรรทัดก่อน-หลัง*/
 div:hover {
-  /* color: palevioletred; */
+  color: palevioletred;
 }
+
+/* #tagH:hover{
+  font-size: xx-small;
+} */
 
 div::before {
-  /* content: "hello world"; */
+  content: "$";
 }
 
 div::first-letter {
-  color: red;
+  color: navy;
 }
 
-#tagH div {
-  /* color: yellowgreen; */
+p::before {
+  content: "*";
+}
+
+/* #tagH div {
+  color: yellowgreen;
 }
 
 #tagH span {
-  /* color: indianred; */
-}
+  color: indianred;
+} */
 
-#tagH > div {
-  /* color : orchid; */
-}
+/* #tagH > div {
+  color : orchid;
+} */
 
-p span {
-  /* color : darkgoldenrod; */
+/* p span {
+  color : darkgoldenrod;
+} */
+
+
+p span{
+  font-size: x-large;
+  color: deeppink;
 }
 
 p > span {
-  /* color : aqua; */
+  font-size: medium;
+  color : turquoise;
 }
 
-p div {
-  /* color: red; */
+p > span > span > span {
+  font-size: small;
+  color: orangered;
 }
-.plusCombinators + div {
-  /* color : brown; */
-}
+
+/* tag p cannot use combinator with div or block element because tag p allowed only inline element */
+/* p div {
+  color: red;
+} */
+
+/* .plusCombinators + div {
+  color : brown;
+} */
 
 .plusCombinators ~ div {
-  /* color: burlywood; */
+  color: burlywood;
 }
+
 input[type] {
   /* color: blue; */
 }
@@ -85,7 +114,7 @@ input[title$="Form"] {
 }
 
 input[title*="this"] {
-  /* background-color: hotpink; */
+  background-color: hotpink;
 }
 
 .textAlign {
@@ -137,14 +166,16 @@ p {
 }
 
 ul > li {
+  font-family: Kanit;
   /* border: solid 1px black; */
   /* list-style-type: circle; */
-  /* list-style-position: outside ; */
+  /* list-style-position: outside; */
   /* list-style-image: url(https://th.seaicons.com/wp-content/uploads/2017/02/address-book-icon.png); */
   /* list-style: circle inside url(https://www.dailygizmo.tv/wp-content/uploads/2017/05/y0-500x512.jpg); */
+  /* list-style: inside url(https://th.seaicons.com/wp-content/uploads/2017/02/address-book-icon.png); */
 }
 
-.borderTable {
+.borderDiv {
   /* width: 100vw; */
   /* min-width: 650px; */
   /* property 650px */
@@ -178,6 +209,7 @@ img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  padding: 50px 50px 50px 50px;
   margin: auto;
 
   /* opacity: 0.1;  */
@@ -185,9 +217,9 @@ img {
 /* opacity 0 - 1, 0 คือ โปร่งแสง , 1 คือ ไม่โปร่งแสง */
 
 .bgTest {
-  /* width: 60vw;
-    height: 130vh; */
-    /* background-color: navajowhite; */
+  width: 6vw;
+  height: 13vh;
+  background-color: navajowhite;
   /* background-image: url(https://image.dek-d.com/contentimg/2018/wut_/kc.jpg); */
 }
 
@@ -200,10 +232,13 @@ body {
 .paddingMargin {
   display: inline-block;
   background-color: aquamarine;
-  /* padding: 10px; */
-  margin: auto;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 20px 20px 20px;
+  /* margin: auto; */
+  width: 50vw;
 }
 
+/* contents ปรับได้แต่ font อย่างเดียว */
 .pDisplay {
   /* display: inline; */
   display: contents;

@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab.html</title>
+    <style>
+        p {font-size: smaller;}
+    </style>
 </head>
 <body>
     <h1>attribute</h1>
-    <table>
+    <table border="1px">
         <tr>
             <th>tag</th>
             <th>attribute</th>
@@ -27,7 +30,7 @@
             <td>&lt;p&gt;</td>
             <td>style</td>
             <td>&lt;p style="color:dodgerblue;background-color:tomato;"&gt;Lorem, ipsum dolor.&lt;/p&gt;</td>
-            <td><p style="color:dodgerblue;background-color:tomato;">Lorem, ipsum dolor.</p></td>
+            <td><p style="color:dodgerblue;background-color:tomato;font-size:medium;">Lorem, ipsum dolor.</p></td>
         </tr>
         <tr>
             <td>&lt;div&gt;</td>
@@ -159,11 +162,255 @@
         </tr>
     </table>
     <h1>differentiation tag</h1>
-    <table>
-
+    <table border="1px">
+        <tr>
+            <th>Tag</th>
+            <th>Differentiation</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt; & &lt;br&gt;</td>
+            <td>
+                &lt;hr&gt; ขึ้นบรรทัดใหม่พร้อมใส่เส้นแนวนอน<br>
+                &lt;br&gt; ขึ้นบรรทัดใหม่อย่างเดียว
+            </td>
+            <td>
+                <p>&lt;hr&gt;</p>
+                Lorem<hr>ipsum<br><br>
+                <p>&lt;br&gt;</p>
+                Lorem<br>ipsum
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt; & &lt;ol&gt;</td>
+            <td>
+                &lt;ul&gt; เป็นลิสต์แบบสัญลักษณ์ (วงกลม สี่เหลี่ยม ฯลฯ)<br>
+                &lt;ol&gt; เป็นลิสต์แบบมีลำดับ (ตัวเลขอารบิก โรมัน หรือ ABC)
+            </td>
+            <td>
+                <p>&lt;ul&gt;</p>
+                <ul>
+                    <li>Lorem</li>
+                    <li>ipsum</li>
+                    <li>dolor</li>
+                </ul>
+                <p>&lt;ol&gt;</p>
+                <ol>
+                    <li>Lorem</li>
+                    <li>ipsum</li>
+                    <li>dolor</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt; & &lt;checkbox&gt; & &lt;radio button&gt;</td>
+            <td>
+                &lt;select&gt; เป็นตัวเลือกแบบลิสต์ ไม่ใช่ form ให้เลือกได้อย่างใดอย่างหนึ่ง<br>
+                &lt;checkbox&gt; เป็นตัวเลือกแบบติ๊กของ form ให้เลือกได้หลายตัว<br>
+                &lt;radio button&gt; เป็นตัวเลือกแบบติ๊กของ form ให้เลือกได้อย่างใดอย่างหนึ่ง
+            </td>
+            <td>
+                <p>&lt;select&gt;</p>
+                <select>
+                    <option value="Lorem">Lorem</option>
+                    <option value="ipsum">ipsum</option>
+                    <option value="dolor">dolor</option>
+                </select>
+                <p>&lt;checkbox&gt;</p>
+                <form>
+                    <input type="checkbox" name="checkbox11" value="Lorem">
+                    <label for="checkbox11">Lorem</label><br>
+                    <input type="checkbox" name="checkbox12" value="ipsum">
+                    <label for="checkbox12">ipsum</label><br>
+                    <input type="checkbox" name="checkbox13" value="dolor">
+                    <label for="checkbox13">dolor</label><br>
+                </form>
+                <p>&lt;radio button&gt;</p>
+                <form>
+                    <input type="radio" id="Lorem" name="abcxyz" value="Lorem">
+                    <label for="Lorem">Lorem</label><br>
+                    <input type="radio" id="ipsum" name="abcxyz" value="ipsum">
+                    <label for="ipsum">ipsum</label><br>
+                    <input type="radio" id="dolor" name="abcxyz" value="dolor">
+                    <label for="dolor">dolor</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;div&gt; & &lt;span&gt;</td>
+            <td>ทั้งคู่ใช้จัดกลุ่มหรือเป็น container สำหรับส่วนประกอบของ HTML อื่น ๆ<br>
+                สามารถใช้ CSS style กับ Javascript จัดการได้<br>
+                แต่ &lt;div&gt; จะขึ้นบรรทัดใหม่ทั้งก่อน และหลัง<br>
+                &lt;span&gt; จะไม่ขึ้นบรรทัดใหม่
+            </td>
+            <td>
+                <p>&lt;div&gt;</p>
+                <div>Lorem</div><div>ipsum</div>
+                <p>&lt;span&gt;</p>
+                <span>Lorem</span><span>ipsum</span>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;script&gt; & &lt;style&gt;</td>
+            <td>&lt;script&gt; ใช้แทรก java script<br>
+                &lt;style&gt; ใช้แทรก CSS
+            </td>
+            <td>ไม่มีตัวอย่าง</td>
+        </tr>
     </table>
     <h1>input type</h1>
-    <table>
-        
+    มี 22 แบบ
+    <table border="1px">
+        <tr>
+            <th>&lt;input type="xxx"&gt;</th>
+            <th>Explanation</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Button</td>
+            <td>ปุ่มสำหรับฟอร์ม คุมการทำงานด้วย script</td>
+            <td><input type="button" value="Button" onclick="alert('Hello, World!')"></td>
+        </tr>
+        <tr>
+            <td>Checkbox</td>
+            <td>ตัวเลือกแบบเลือกได้หลายตัว</td>
+            <td>
+                <input type="checkbox" name="checkbox11" value="Lorem">
+                <label for="checkbox21">Lorem</label><br>
+                <input type="checkbox" name="checkbox12" value="ipsum">
+                <label for="checkbox22">ipsum</label><br>
+                <input type="checkbox" name="checkbox13" value="dolor">
+                <label for="checkbox23">dolor</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td>ใช้เลือกสี</td>
+            <td><input type="color" id="favcolor" name="favcolor" value="#ff0000"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>ฟอร์มวันที่</td>
+            <td><input type="date" id="birthday" name="birthday"></td>
+        </tr>
+        <tr>
+            <td>Datetime-local</td>
+            <td>ฟอร์มวันที่และเวลา</td>
+            <td><input type="datetime-local" id="birthdaytime" name="birthdaytime"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>ช่องกรอกอีเมล</td>
+            <td>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>File</td>
+            <td>เลือกไฟล์</td>
+            <td><input type="file" id="myfile" name="myfile"></td>
+        </tr>
+        <tr>
+            <td>Hidden</td>
+            <td>ใช้ซ่อนข้อความจากผู้ใช้ เช่น id ของผู้ใช้, ชื่อตาราง<br> แต่ไม่ปลอดภัยเพราะสามารถอ่านได้จาก inspector ของ browser</td>
+            <td><input type="hidden" id="custId" name="custId" value="Lorem"></td>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td>ใช้รูปแทน Submit</td>
+            <td><input type="image" src="./pic/loveGifImgBtn.gif" alt="Love" width="48" height="48"></td>
+        </tr>
+        <tr>
+            <td>Month</td>
+            <td>เลือกเดือนและปี</td>
+            <td><input type="month" id="bdaymonth" name="bdaymonth"></td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>เลือกตัวเลข สามารถกำหนดจำนวนสูงสุด-ต่ำสุดได้</td>
+            <td>
+                <label for="quantity">Quantity (between 13 and 17):</label>
+                <input type="number" id="quantity" name="quantity" min="13" max="17">
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>ช่องกรอกพาสเวิร์ด</td>
+            <td>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </td>
+        </tr>
+        <tr>
+            <td>Radio</td>
+            <td>ตัวเลือกแบบเลือกได้ตัวเดียว</td>
+            <td><input type="radio" id="Lorem1" name="abcxyz1" value="Lorem">
+                <label for="Lorem1">Lorem</label><br>
+                <input type="radio" id="ipsum1" name="abcxyz1" value="ipsum">
+                <label for="ipsum">ipsum</label><br>
+                <input type="radio" id="dolor1" name="abcxyz1" value="dolor">
+                <label for="dolor1">dolor</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Range</td>
+            <td>แถบเลื่อน เลือกค่าตัวเลขจากที่กำหนดสูงสุด-ต่ำสุดไว้</td>
+            <td>
+                <label for="points">Points (between 0 and 10):</label>
+                <input type="range" id="points" name="points" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>Reset</td>
+            <td>ล้างค่าในฟอร์มทั้งหมด</td>
+            <td><input type="reset"></td> 
+        </tr>
+        <tr>
+            <td>Search</td>
+            <td>ช่องสำหรับกรอกคำค้นหา</td>
+            <td>
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+            </td>
+        </tr>
+        <tr>
+            <td>Submit</td>
+            <td>ใช้ส่งข้อมูลฟอร์ม</td>
+            <td><input type="submit"></td>
+        </tr>
+        <tr>
+            <td>Tel</td>
+            <td>ช่องกรอกเบอร์โทรศัพท์ สามารถกำหนดแพทเทิร์นได้</td>
+            <td>
+                <label for="phone">Mobile number: 0xx-xxx-xxxx </label>
+                <input type="tel" id="mobile" name="mobile" pattern="{0}[8-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]">
+            </td>
+        </tr>
+        <tr>
+            <td>Text</td>
+            <td>ช่องกรอกข้อความ เป็นค่าตั้งต้นถ้าไม่กำหนด input type</td>
+            <td><label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>เลือกเวลา</td>
+            <td><input type="time" id="appt" name="appt"></td>
+        </tr>
+        <tr>
+            <td>Url</td>
+            <td>ช่องกรอก URL</td>
+            <td>
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage">
+            </td>
+        </tr>
+        <tr>
+            <td>Week</td>
+            <td>เลือกอาทิตย์ที่ของปี</td>
+            <td><input type="week" id="week" name="week"></td>
+        </tr>
     </table>
 </body>

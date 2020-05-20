@@ -5,9 +5,9 @@
     /* flex-direction: row; */
     /* flex-direction: row-reverse; */
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* flex-wrap: wrap-reverse; */
-    /* flex-flow: row wrap; */
+    flex-flow: row wrap;
     /* flex-flow: column wrap; */
 
 
@@ -35,7 +35,7 @@
 
     /* flex-grow: 30; */
     /* flex-shrink: 50; */
-    flex-basis: 400px;
-    flex: 30 50;
+    /* flex-basis: 200px; */
+    flex: 30 50 200px;
 
 }

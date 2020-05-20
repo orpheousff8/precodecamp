@@ -15,7 +15,6 @@
 .container > div{
     background-color: peachpuff;
     text-align: center;
-    
 }
 
 .item5 {
@@ -24,10 +23,12 @@
     /* grid-column: 1/span 2; */
     /* grid-row: 1/span 3; */
     /* grid-area: 1/1/3/3; */
-    /* grid-area: 1/1/span 2/span 3; */
-    
+    grid-area: 2/2/span 1/span 2;
+    /* ชนกับ combinators ไม่เปลี่ยนสีซะงั้น */
+    background-color: orangered;
 } 
-/* กรณีที่พิมพ์เลขติดกับ span จะกิดอะไรขึ้น เช่น span3 */
+
+/* กรณีที่พิมพ์เลขติดกับ span จะกิดอะไรขึ้น เช่น span3 >> คำสั่งใช้ไม่ได้ */
 
 /* @media screen and (min-width: 800px){
     .container{

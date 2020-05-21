@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lab3.html</title>
+        <link rel="stylesheet" href="./CSS/Lab3.css" type="text/css">
+        <!-- Cool Dropdown button style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1>เว็ปข่าว</h1>
+        <div class="tooltip">
+            <a href="https://www.bbc.com/news">BBC</a>
+            <span class="tooltiptext">https://www.bbc.com/news</span>
+        </div>
+        <p>วางโครงสร้างมี Navigation bar ด้านบน</p>
+        <p>ต่อมาเนื้อข่าวเป็นแบบ flex</p>
+        <p>ล่างสุดเป็น Pagination</p>
+        <br>
+        <div class="navBarDropdown">
+            <a href="#lorem" class="active">Lorem</a>
+            <a href="#ipsum">Ipsom</a>
+            <a href="#dolor">Dolor</a>
+            <div class="dropdown">
+              <button class="dropbtn">Sit
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                <a href="#amet">Amet</a>
+                <a href="#consectetur">Consectetur</a>
+                <a href="#adipisicing">Adipisicing</a>
+                </div>
+            </div>
+        </div>
+        <h2>Lorem</h2>
+        <div class="container" id="bbc">
+            <div class="item" id="bbc1">
+                <a href="#bbc1">
+                    <img src="/pic/cat1.jpg" alt="cat1">
+                    <p>news 1</p>
+                </a>
+            </div>
+            <div class="item" id="bbc2">
+                <a href="#bbc2">
+                    <img src="/pic/cat2.jpg" alt="cat2">
+                    <p>news 2</p>
+                </a>
+            </div>
+            <div class="item" id="bbc3">
+                <a href="#bbc3">
+                    <img src="/pic/cat3.jpg" alt="cat3">
+                    <p>news 3</p>
+                </a>
+            </div>
+            <div class="item" id="bbc4">
+                <a href="#bbc1">
+                    <img src="/pic/cat4.jpg" alt="cat4">
+                    <p>news 4</p>
+                </a>
+            </div>
+            <div class="item" id="bbc5">
+                <a href="#bbc5">
+                    <img src="/pic/cat5.jpg" alt="cat5">
+                    <p>news 5</p>
+                </a>
+            </div>
+         </div>
+         <hr>
+         <h2>Ipsom</h2>
+        <div class="container" id="bbc">
+            <div class="item" id="bbc6">
+                <a href="#bbc6">
+                    <img src="/pic/cat6.jpg" alt="cat6">
+                    <p>news 6</p>
+                </a>
+            </div>
+            <div class="item" id="bbc7">
+                <a href="#bbc6">
+                    <img src="/pic/cat7.jpg" alt="cat7">
+                    <p>news 7</p>
+                </a>
+            </div>
+            <div class="item" id="bb87">
+                <a href="#bbc8">
+                    <img src="/pic/cat8.jpg" alt="cat8">
+                    <p>news 8</p>
+                </a>
+            </div>
+            <div class="item" id="bbc9">
+                <a href="#bbc9">
+                    <img src="/pic/cat9.jpg" alt="cat9">
+                    <p>news 9</p>
+                </a>
+            </div>
+            <div class="item" id="bbc">
+                <a href="#bbc10">
+                    <img src="/pic/cat10.jpg" alt="cat10">
+                    <p>news 10</p>
+                </a>
+            </div>
+         </div>
+         <br>
+         <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+        
+        <br><br><hr>
+
+        <h1>เว็ปช็อปปิ้ง</h1>
+        <div class="tooltip">
+            <a href="https://www.arduinoall.com/showroom/hot">Inwshop</a>
+            <span class="tooltiptext">https://www.arduinoall.com/showroom/hot</span>
+        </div>
+        <p>วางโครงสร้างมี Navigation bar ด้านบน</p>
+        <p>ตรงกลางเป็น 2 ช่อง ซ้ายเป็น Navigation bar ขวาเป็นสินค้าแบบ Grid</p>
+        <p>ล่างสุดของช่องสินค้าเป็น Pagination</p>
+        <br>
+        <div class="navBarDropdown">
+            <a href="#lorem" class="active">Lorem</a>
+            <a href="#ipsum">Ipsom</a>
+            <a href="#dolor">Dolor</a>
+            <a href="#dolor">Sit</a>
+            </div>
+        </div>
+        <div>
+            <span>
+                <ul class="navBar" id="v">
+                    <li><a href="#amet">Lorem</a></li>
+                    <li><a href="#consectetur">Consectetur</a></li>
+                    <li><a href="#adipisicing">Adipisicing</a></li>
+                    <li><a href="#elit">Elit</a></li>
+                </ul>
+            </span>
+            <span class="container" id="inwshop">
+                <div class="item" id="inwshop1">
+                    <a href="#inwshop1">
+                        <img src="/pic/cat1.jpg" alt="cat1">
+                        <p>Item 1</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop2">
+                    <a href="#inwshop2">
+                        <img src="/pic/cat2.jpg" alt="cat2">
+                        <p>Item 2</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop3">
+                    <a href="#inwshop3">
+                        <img src="/pic/cat3.jpg" alt="cat3">
+                        <p>Item 3</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop4">
+                    <a href="#inwshop4">
+                        <img src="/pic/cat4.jpg" alt="cat4">
+                        <p>Item 4</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop5">
+                    <a href="#inwshop5">
+                        <img src="/pic/cat5.jpg" alt="cat5">
+                        <p>Item 5</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop6">
+                    <a href="#inwshop6">
+                        <img src="/pic/cat6.jpg" alt="cat6">
+                        <p>Item 6</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop7">
+                    <a href="#inwshop7">
+                        <img src="/pic/cat7.jpg" alt="cat7">
+                        <p>Item 7</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop8">
+                    <a href="#inwshop8">
+                        <img src="/pic/cat8.jpg" alt="cat8">
+                        <p>Item 8</p>
+                    </a>
+                </div>
+                <div class="item" id="inwshop9">
+                    <a href="#inwshop9">
+                        <img src="/pic/cat9.jpg" alt="cat9">
+                        <p>Item 9</p>
+                    </a>
+                </div>
+                <!-- <div class="item" id="inwshop10">
+                    <a href="#inwshop10">
+                        <img src="/pic/cat10.jpg" alt="cat10">
+                        <p>Item 9</p>
+                    </a>
+                </div> -->
+                <br>
+                <ul class="breadcrumb">
+                    <li>1</li>
+                    <li><a href="#2">2</a></li>
+                    <li><a href="#3">3</a></li>
+                    <li><a href="#4">4</a></li>
+                </ul>
+            </span>
+        </div>
+
+        <br><br><hr>
+
+        <h1>เว็ปกระทู้</h1>
+        <div class="tooltip">
+            <a href="https://pantip.com/topic/39916312">Pantip</a>
+            <span class="tooltiptext">https://pantip.com/topic/39916312</span>
+        </div>
+        <p>วางโครงสร้างมี Navigation bar ด้านบน</p>
+        <p>ตัวกระทู้เป็น flex แบบ column</p>
+        <p>ถัดมาเป็น form</p>
+        <p>ล่างสุดเป็น Pagination</p>
+        <br>
+        <div class="navBarDropdown" id="pantipNavBarDropdown">
+            <a href="#lorem" class="active">Lorem</a>
+            <a href="#ipsum">Ipsom</a>
+            <a href="#dolor">Dolor</a>
+            <div class="dropdown">
+              <button class="dropbtn">Sit
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                <a href="#amet">Amet</a>
+                <a href="#consectetur">Consectetur</a>
+                <a href="#adipisicing">Adipisicing</a>
+                </div>
+            </div>
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+        </div>
+        <div class="container" id="pantip">
+            <div class="item" id="pantip1">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis similique obcaecati eos. Quaerat ut iure illum veritatis reiciendis corrupti? 
+                    Repellat delectus facere velit id obcaecati, quas officia asperiores est modi!
+                </p>
+            </div>
+            <div class="item" id="pantip2">
+                <strong>Reply #1</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis similique obcaecati eos. Quaerat ut iure illum veritatis reiciendis corrupti? 
+                    Repellat delectus facere velit id obcaecati, quas officia asperiores est modi!
+                </p>
+            </div>
+            <div class="item" id="pantip3">
+                <strong>Reply #2</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis similique obcaecati eos. Quaerat ut iure illum veritatis reiciendis corrupti? 
+                    Repellat delectus facere velit id obcaecati, quas officia asperiores est modi!
+                </p>
+            </div>
+            <div class="item" id="pantip4">
+                <strong>Reply #3</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis similique obcaecati eos. Quaerat ut iure illum veritatis reiciendis corrupti? 
+                    Repellat delectus facere velit id obcaecati, quas officia asperiores est modi!
+                </p>
+            </div>
+            <div class="item" id="pantip5">
+                <strong>Reply #4</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reiciendis similique obcaecati eos. Quaerat ut iure illum veritatis reiciendis corrupti? 
+                    Repellat delectus facere velit id obcaecati, quas officia asperiores est modi!
+                </p>
+            </div>
+            <div class="form" id="pantipForm">
+                <form action="./link.html" method="get" autocomplete="off" target="_blank" id="form1">
+                    <label for="reply">แสดงความคิดเห็น</label>
+                    <br>
+                    <input type="text" id="replyBox" name="reply"> 
+                    <br><br>
+                    <input type="submit" id="replyBtn" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>

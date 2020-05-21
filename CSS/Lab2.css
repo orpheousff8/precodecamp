@@ -1,0 +1,202 @@
+body {
+    text-align: center;
+}
+
+.essay {
+    display: inline-block;
+    text-align: center;
+}
+    .essay > p {
+        text-indent: 50px;
+        max-width: 60vw;
+    }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+  
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Effect */
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+
+        /* Effect */
+        opacity: 1;
+    }
+    .tooltip .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 100%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+
+.pagination {
+    display: inline-block;
+}
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+    .pagination a:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .pagination a:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+    ul.breadcrumb li {
+        display: inline;
+    }
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+        ul.breadcrumb li a {
+            color: green;
+        }
+
+ul.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+ul.navBar#v {
+    width: 200px;
+}
+ul.navBar#h {
+    overflow: hidden;
+}
+    ul.navBar#h li {
+        float: left;
+    }
+        ul.navBar li a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+        }
+        ul.navBar#v li a {
+            padding: 8px 16px;
+        }
+        ul.navBar#h li a {
+            text-align: center;
+            padding: 14px 16px;
+        }
+        ul.navBar li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        ul.navBar li a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+.navBarDropdown {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+          
+    .navBarDropdown a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .navBarDropdown a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+          
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+          
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #4CAF50;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+          
+    .navBarDropdown a:hover:not(.active), .dropdown:hover:not(.active) .dropbtn {
+        color: white;
+        background-color: #555;
+    }
+          
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+          
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
